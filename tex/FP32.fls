@@ -1,8 +1,8 @@
-PWD /Users/emiliano_gr/Desktop/Masters/Second_Semester/FOPRAS/32/QST_FOPRA_32/tex
+PWD /Users/emiliano_gr/Desktop/Masters/Second_Semester/FOPRAS/34/QST_34_REPORT/QST_FOPRA_34/tex
 INPUT /usr/local/texlive/2022/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/emiliano_gr/Desktop/Masters/Second_Semester/FOPRAS/32/QST_FOPRA_32/tex/FP32.tex
+INPUT /Users/emiliano_gr/Desktop/Masters/Second_Semester/FOPRAS/34/QST_34_REPORT/QST_FOPRA_34/tex/FP32.tex
 OUTPUT FP32.log
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/koma-script/scrreport.cls
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/koma-script/scrreport.cls
