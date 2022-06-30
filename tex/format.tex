@@ -1,0 +1,31 @@
+%\clubpenalty10000                                   % Schusterjunge, orphan
+%\widowpenalty10000                                  % Hurenkind, Witwe
+%\displaywidowpenalty=10000                          % Make document obey stricter rules considering "schusterjungen" and "hurenkinder"
+\renewcommand{\topfraction}{0.8}                    % allows for more chilled "text to image ratio" 
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.8}
+
+% \renewcaptionname{ngerman}{\figurename}{Abb.}       %"Abbildung" becomes "Abb." in German
+%\setcapindent{0cm}                                 %useful if image captions have multiple lines. Removers indentation below "Abb."
+%\setlength{\parindent}{0cm}                         %removes indentation at start of new paragraphs
+
+
+%bibliography slots are redefined/modified here
+\DeclareFieldFormat{journaltitle}{\textsl{#1}\isdot}
+\DeclareFieldFormat{titlecase}{{#1}}
+
+
+%COLORS
+\definecolor{dblue}{rgb}{0,0,0.5}
+\definecolor{dred}{rgb}{0.5,0,0}
+\definecolor{dgrey}{rgb}{0.5,0.5,0.5}
+
+%overwrite the coma-script definitions
+\addtokomafont{pagehead}{\normalfont\color{dgrey}}                  %overwrite the coma-script definitions
+\addtokomafont{sectioning}{\rmfamily\color{black}\boldmath}         %rmfamily puts headings in "normal" "Serifenschrift" instead of "sans-serif"  boldmath ensures a bold math font in subscripts
+\addtokomafont{captionlabel}{\bfseries\footnotesize}                %better Abb. format
+\addtokomafont{caption}{\footnotesize}                          
+
+%! hyphenation commonly used words can be spelled here to provide latex with the correct places to make linebreaks
+\hyphenation{Ko-ef-fi-zi-ent}

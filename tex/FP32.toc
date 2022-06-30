@@ -1,0 +1,20 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Numerical Methods}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Matrix Product States (MPS)}{2}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Time Evolving Block Decimation (TEBD)}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Dynamic Structure Factor}{4}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Day 1 -- Basics of Matrix Product States}{6}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Single-Site Expectation Values}{6}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Energy of 1D Ising Chain}{6}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Equal-Time Correlations and Magnetization}{7}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Connected Correlations and Correlation Length}{9}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Day 2 -- Time Evolution}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Numerical specialties}{11}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Entanglement}{11}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Correlation}{12}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Dynamical Spin Structure Factor}{13}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Comparison with the Roots of the Airy-function}{15}{subsection.4.4.1}%
+\contentsline {chapter}{\numberline {5}Conclusion}{16}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Bibliography}{17}{chapter.6}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

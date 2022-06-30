@@ -1,0 +1,128 @@
+\documentclass[
+headings=optiontohead,              %allows double headers
+12pt,                               %fontsize 
+DIV=13,                             %koma script diveider amount. tells koma how much of the site can be written to
+open=right,                         %starting page on twosided texts 
+toc=bibliographynumbered            %bibliography gets a number and is listed in the table of contents
+]{scrreport}
+\raggedbottom
+\setlength{\parindent}{0em}
+
+\usepackage[utf8]{inputenc}                     %correct encoding of output, technically not needed anymore
+\usepackage[T1]{fontenc}                        %correct encoding of output, technically not needed anymore
+\usepackage[ngerman, english]{babel}             %font that supports English
+\usepackage{upgreek}                            %non-cursive Greek letters
+\usepackage[stretch=10,shrink=10,protrusion=true,expansion=true,final]{microtype}                          %prettier blocksatz
+\usepackage{hyperref}                           %links for everything
+\usepackage{color}                              %allows for setting in different colors
+\usepackage[autooneside=false,automark]{scrlayer-scrpage}%page-style with "Kolumnentitel" (title of current chapter is displayed at the top)
+\usepackage[autostyle=true]{csquotes}           %context-sensitive-quotes -> quotation marks that are set correctly for the context
+%\usepackage{lmodern}                           %alternative font (better use libertinus)
+\usepackage[sb]{libertinus}                     %use the font libertinus (needs to be installed from the web)
+\usepackage[slantedGreek]{libertinust1math}     %math mode improvement for libertinus
+\usepackage{siunitx}                            %physical units setting
+\usepackage{icomma}                             %commas in lists get extra space if needed                        
+\usepackage{amsfonts,amssymb,amstext,amsmath,amsthm} %better math mode (\mathrm and \text) and symbols
+\usepackage{xspace}                             %works to improve own commands and provides "\xspace"-command, that puts a space if needed
+\usepackage{ifthen}                             %more control over non-obligatory parameters
+\usepackage[onehalfspacing]{setspace}           %control the spacing between lines and in enumeration lists
+\usepackage[backend=biber, style=phys, url=true, biblabel=brackets]{biblatex}         %citations with "modern" backend and an physics-accepted citation style
+%\usepackage{graphicx}                           %work with graphics 
+\usepackage{pdfpages}                           %allows including of pdfs into this pdf
+\usepackage{booktabs}                           %better table formatting
+\usepackage{multicol}                           %allows for the definition of multi-columns in tables
+\usepackage{multirow}                           %allows for the definition of multirow-tables instead of just multicolumn
+\usepackage{arydshln}                           % allows dotted hline
+\setlength\dashlinedash{1.5pt}
+\setlength\dashlinegap{0pt}
+\setlength\arrayrulewidth{0.3pt}
+\usepackage{tikz}                               %generate nice svg-pictures directly in latex
+\usepackage{quantikz}
+\usepackage[siunitx,european,straightvoltages, oldvoltagedirection]{circuitikz}
+\usetikzlibrary{babel}
+\usepackage{url}                                %sometimes needed by biblatex, technically no longer needed
+
+\usepackage{todonotes}                          %adds todonotes (added by Jan Wozniak)
+\usepackage{placeins} %for \FloatBarrier 
+\input{format}                                  %another file that holds format information
+\input{commands}                                %another file that holds predefined commands
+
+\graphicspath{{./Grafiken/}}              %custom paths for folders in that graphics can be found
+
+% \linespread{1.1}                        %line-spacing can be controlled here
+
+\usetikzlibrary{calc}                   %calculations inside tikz
+\usetikzlibrary{arrows}                 %better arrows for tikz
+\usepackage{pgfplots}                   %better plotting with tikz
+\pgfplotsset{compat=1.16}               %better plotting with tikz
+\pgfkeys{/pgf/number format/.cd, use comma}
+
+
+\sisetup                                %setup for siunitx
+{
+detect-all,
+range-units = brackets,                 %better display of error ranges
+per-mode=symbol-or-fraction,            %more dynamic frac usage in inline/displaymath mode
+separate-uncertainty,                   %for better +- , \pm when including an error range 
+}
+
+\hypersetup
+{
+hidelinks,
+colorlinks=true,
+linkcolor=dblue,            %deep blue linkcolor
+urlcolor=dblue,             %deep blue linkcolor
+citecolor=dblue,            %deep blue linkcolor
+pdfauthor = {Jan Wozinak, Jan Geiger, Emiliano Godinez},                                   %write details into the expanded file properties
+pdftitle = {FP32},  
+pdfkeywords = {Fortgeschrittenen-Praktikum},            
+pdfsubject = {FP32}
+}
+
+
+\AtBeginDocument{
+	\let\mathbb\relax
+	\DeclareMathAlphabet\PazoBB{U}{fplmbb}{m}{n}
+	\newcommand{\mathbb}{\PazoBB}
+}
+
+
+\addbibresource{literatur.bib}              %initialize bibtex with correct file
+
+
+%!START THE DOCUMENT
+
+\begin{document}
+    \thispagestyle{empty}           %make sure title page ist not numbered or anything else
+    \input{titlepage.tex}           %include title-page
+    \cleardoublepage                %make sure, that if double-page is active, to reset the double page counter
+    \pagestyle{scrheadings}         %puts current chapters title into the header in small grey font
+    \pagenumbering{roman}           %number the pages of the table of contents in roman numerals
+    \input{table_of_contents.tex}   %table of contents include
+    \pagenumbering{arabic}          %number the pages of the main document in Arabic numerals
+    \clearpairofpagestyles
+    \ihead{\leftmark}
+    \ohead{\Ifstr{\leftmark}{\rightmark}{}{\rightmark}}
+    \cfoot*{\pagemark}
+
+
+    \cleardoublepage
+    
+
+    \chapter{Introduction}
+    \input{introduction.tex}
+
+    \chapter{Numerical Methods}
+    \input{numerical_methods.tex}
+
+    \chapter{Day 1 -- Basics of Matrix Product States}
+    \input{day1.tex}
+
+    \chapter{Day 2 -- Time Evolution}
+    \input{day2.tex}
+
+    \chapter{Conclusion}
+    \input{summary.tex}
+
+    \input{sources.tex}
+\end{document}

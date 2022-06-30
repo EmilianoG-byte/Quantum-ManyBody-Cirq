@@ -1,0 +1,70 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{anleitung}{article}{}
+      \name{author}{3}{}{%
+        {{hash=fb4c86c0948ce1f16f8d42001263c071}{%
+           family={Pollmann},
+           familyi={P\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=d652dcf8d1ed0057dea1fa832f9d1dad}{%
+           family={Drescher},
+           familyi={D\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3ffee046678af62cd4ecf12c31f36c07}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Shenghsuan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{82c4377330f965e39718905290e0b9a6}
+      \strng{fullhash}{a89370e3b0eef4e084bb4642bed1a45c}
+      \strng{bibnamehash}{a89370e3b0eef4e084bb4642bed1a45c}
+      \strng{authorbibnamehash}{a89370e3b0eef4e084bb4642bed1a45c}
+      \strng{authornamehash}{82c4377330f965e39718905290e0b9a6}
+      \strng{authorfullhash}{a89370e3b0eef4e084bb4642bed1a45c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{title}{Tensor-network simulations of bound states in perturbed quantum Ising chains}
+      \field{urlday}{6}
+      \field{urlmonth}{6}
+      \field{urlyear}{2022}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{25}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://campus.tum.de/tumonline/LV_TX.wbDisplaySemplanDoc?pStpSplDsNr=21827
+      \endverb
+      \verb{url}
+      \verb https://campus.tum.de/tumonline/LV_TX.wbDisplaySemplanDoc?pStpSplDsNr=21827
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

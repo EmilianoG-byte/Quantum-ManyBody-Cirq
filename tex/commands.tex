@@ -1,0 +1,46 @@
+%! Commands by Jan Geiger and Jonas Kell 
+\usetikzlibrary{shapes.misc}
+\tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt}, cross/.default={1pt}}
+
+\newcommand*{\fullref}[1]{\hyperref[{#1}]{\textit{\ref*{#1} \nameref*{#1}}}}
+\newcommand*{\fullpage}[1]{\hyperref[{#1}]{Seite \pageref*{#1}}}
+\newcommand*{\fullpages}[1]{\hyperref[{#1}]{Seiten \pageref*{#1}ff}}
+\newcommand*{\kapref}[1]{\hyperref[{#1}]{{Kapitel \ref*{#1}}}}
+
+\renewcommand*{\arraystretch}{1.5}
+
+\newcommand{\dx}[1]{\; \text{d}#1}
+\newcommand{\da}[1]{\text{d}#1}
+\newcommand{\rot}{\text{rot }}
+\newcommand{\grad}{\text{grad }}
+\renewcommand{\div}{\text{div }}
+
+\newcommand{\kb}{k_\text{B}}
+
+\newcommand{\myexp}[1]{\ensuremath{\exp\left\{#1\right\}}}
+\newcommand{\myln}[1]{\ensuremath{\ln\left(#1\right)}}
+\newcommand{\mylog}[1]{\ensuremath{\log\left(#1\right)}}
+\newcommand{\mycoth}[1]{\ensuremath{\coth\left(#1\right)}}
+\newcommand{\mydet}[1]{\ensuremath{\det\left(#1\right)}}
+\newcommand{\mytr}[1]{\ensuremath{\text{Tr}\left(#1\right)}}
+
+\newcommand{\mysin}[1]{\ensuremath{\sin\left(#1\right)}}
+\newcommand{\mycos}[1]{\ensuremath{\cos\left(#1\right)}}
+\newcommand{\mytan}[1]{\ensuremath{\tan\left(#1\right)}}
+
+
+
+
+\newcommand{\abs}[1]{\ensuremath{\left|#1\right|}\xspace}
+\newcommand{\smallabs}[1]{\ensuremath{\big|#1\big|}\xspace}
+
+
+\newcommand{\norm}[1]{\ensuremath{||#1||}\xspace}
+
+\newcommand{\sigmax}[1][]{\ensuremath{\hat{\sigma}_{\text{x} \ifthenelse{\equal{#1}{}}{}{, {#1}}}}\xspace}
+\newcommand{\sigmay}[1][]{\ensuremath{\hat{\sigma}_{\text{y} \ifthenelse{\equal{#1}{}}{}{, {#1}}}}\xspace}
+\newcommand{\sigmaz}[1][]{\ensuremath{\hat{\sigma}_{\text{z} \ifthenelse{\equal{#1}{}}{}{, {#1}}}}\xspace}
+
+
+
+
