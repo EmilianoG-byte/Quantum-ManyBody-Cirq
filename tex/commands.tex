@@ -1,6 +1,8 @@
-%! Commands by Jan Geiger and Jonas Kell 
 \usetikzlibrary{shapes.misc}
 \tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt}, cross/.default={1pt}}
+
+\usepackage{amsmath}
+\DeclareMathOperator{\Tr}{Tr} % to define the trace
 
 \newcommand*{\fullref}[1]{\hyperref[{#1}]{\textit{\ref*{#1} \nameref*{#1}}}}
 \newcommand*{\fullpage}[1]{\hyperref[{#1}]{Seite \pageref*{#1}}}
@@ -39,8 +41,13 @@
 
 \newcommand{\sigmax}[1][]{\ensuremath{\hat{\sigma}_{\text{x} \ifthenelse{\equal{#1}{}}{}{, {#1}}}}\xspace}
 \newcommand{\sigmay}[1][]{\ensuremath{\hat{\sigma}_{\text{y} \ifthenelse{\equal{#1}{}}{}{, {#1}}}}\xspace}
+\newcommand{\hadamard}{\ensuremath{\frac{1}{\sqrt{2}}\begin{pmatrix} 1&1\\1&1\end{pmatrix}}}
 \newcommand{\sigmaz}[1][]{\ensuremath{\hat{\sigma}_{\text{z} \ifthenelse{\equal{#1}{}}{}{, {#1}}}}\xspace}
+\newcommand{\iu}{{i\mkern1mu}}
 
-
-
-
+\newcommand{\expval}[1]{\ensuremath{\langle #1 \rangle}}
+\newcommand{\Up}{\ket{\Uparrow}}
+\newcommand{\Right}{\ket{\Rightarrow}}
+\newcommand{\LUp}{\bra{\Uparrow}}
+\newcommand{\LRight}{\bra{\Rightarrow}}
+\newcommand{\yx}[1]{\ensuremath\mathrm{#1}}

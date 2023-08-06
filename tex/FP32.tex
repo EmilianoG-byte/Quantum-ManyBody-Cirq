@@ -13,6 +13,8 @@ toc=bibliographynumbered            %bibliography gets a number and is listed in
 \usepackage[ngerman, english]{babel}             %font that supports English
 \usepackage{upgreek}                            %non-cursive Greek letters
 \usepackage[stretch=10,shrink=10,protrusion=true,expansion=true,final]{microtype}                          %prettier blocksatz
+\usepackage{caption}
+\usepackage{subcaption}
 \usepackage{hyperref}                           %links for everything
 \usepackage{color}                              %allows for setting in different colors
 \usepackage[autooneside=false,automark]{scrlayer-scrpage}%page-style with "Kolumnentitel" (title of current chapter is displayed at the top)
@@ -42,7 +44,6 @@ toc=bibliographynumbered            %bibliography gets a number and is listed in
 \usetikzlibrary{babel}
 \usepackage{url}                                %sometimes needed by biblatex, technically no longer needed
 
-\usepackage{todonotes}                          %adds todonotes (added by Jan Wozniak)
 \usepackage{placeins} %for \FloatBarrier 
 \input{format}                                  %another file that holds format information
 \input{commands}                                %another file that holds predefined commands
@@ -73,10 +74,10 @@ colorlinks=true,
 linkcolor=dblue,            %deep blue linkcolor
 urlcolor=dblue,             %deep blue linkcolor
 citecolor=dblue,            %deep blue linkcolor
-pdfauthor = {Jan Wozinak, Jan Geiger, Emiliano Godinez},                                   %write details into the expanded file properties
-pdftitle = {FP32},  
-pdfkeywords = {Fortgeschrittenen-Praktikum},            
-pdfsubject = {FP32}
+pdfauthor = {Christian Gnandt, Franz von Silva Tarouca, Emiliano Godinez},                                   %write details into the expanded file properties
+pdftitle = {FP34},  
+pdfkeywords = {FOPRA},            
+pdfsubject = {FP34}
 }
 
 
@@ -112,17 +113,15 @@ pdfsubject = {FP32}
     \chapter{Introduction}
     \input{introduction.tex}
 
-    \chapter{Numerical Methods}
-    \input{numerical_methods.tex}
-
-    \chapter{Day 1 -- Basics of Matrix Product States}
+    \chapter{Day 1 -- Quantum Computation with Cirq}
     \input{day1.tex}
 
-    \chapter{Day 2 -- Time Evolution}
+    \chapter{Day 2 -- Quantum Phase Transitions in an Ising Model}
     \input{day2.tex}
-
-    \chapter{Conclusion}
-    \input{summary.tex}
+    
+    \appendix
+    \chapter{Appendix}
+    \input{appendix.tex}
 
     \input{sources.tex}
 \end{document}
