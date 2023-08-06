@@ -1,10 +1,8 @@
 # Simulating quantum many-body dynamics on a current digital quantum computer
 
-**FOPRA 34, June 2022**
+**FOPRA 34, July 2022**
 
-The analysis of quantum many-body problems is of utter relevance when aiming to study in depth some of the fundamental quantum mechanical systems. However, in order to do so, it is necessary to deal with the exponential growth in computational resources. Tensor networks have emerged as an ubiquitous tool that can be used to address this challenge.
-
-In this report, we first explain the theory behind the methods here employed such as matrix product state (MPS), time evolution block decimation (TEBD) and dynamic structure factor. With these, the ground state of the Ising model is explored as well as its excited states and the corresponding dynamics such as the time evolution. In addition, these methods allow us to obtain the phase diagram of our Ising hamiltonian with longitudinal and transverse fields as well as the dynamic structure factor.
+The field of quantum many-body physics covers a wide range of systems with increasing scale, with many relying on numerical simulations to solve their equations. Quantum computing devices are an ideal platform to explore these open questions, as they are able to naturally handle the exponential complexity of a quantum system. This report studies dynamical phase transitions, a quantum many-body phenomena, in a specific Ising model using simulations with the Google Cirq framwork for noisy intermediate scale quantum computing. The code uses common methods in quantum simulation, such as Trotterization, Generalized Amplitude Damping channel and Tomography, to run a local simulation that mirrors the protocol used to control and compute on a real quantum device. The theoretical groundwork and coding tasks are taken from the manual provided [1]. The report summarizes some of the core theoretical concepts needed for the exercises and discusses the results of the simulations.
 
 <p align="center">
 <img src="plots/cover.jpg" alt="drawing" width="75%"/>
@@ -17,3 +15,7 @@ In this report, we first explain the theory behind the methods here employed suc
 * @Franzvst: Franz Von Silva Tarouca
 * @gnandt: Christian Gnandt
 * @EmilianoG-byte: Cristian Emiliano Godinez Ramirez
+
+---
+[1] Practical Training, Condensed Matter Theory, Technical University Munich
+Physics Department.  Prof. Dr. Michael Knap.  [Sources.](/sources/)
