@@ -8,7 +8,7 @@ The field of quantum many-body physics covers a wide range of systems with incre
 <img src="plots/cover.jpg" alt="drawing" width="75%"/>
 </p>
 
-
+Full report: [here](/report.pdf)
 
 ----
 ## Authors:
